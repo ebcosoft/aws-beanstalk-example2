@@ -16,4 +16,5 @@ phases:
       - mv target/deploy ./
 artifacts:
   files:
-    - deploy/**/*
+    - '**/*'
+    - base-directory: 'aws-elastic-beanstalk-example2'
