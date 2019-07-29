@@ -1,16 +1,16 @@
 version: 0.2
 phases:
-  pre-buld:
+  pre_build:
     commands:
     - echo "Entered the prebuild phase"
   build:
     commands:
     - echo "Enter build phase"
     - mvn clean prepare-package war:explode
-  post-build:
+  post_build:
     commands:
-    -echo "enter the post build phase"
-    -mv target/deploy ./
+    - echo "enter the post build phase"
+    - mv target/deploy ./
 artifacts:
   files:
     -deploy/**/*
