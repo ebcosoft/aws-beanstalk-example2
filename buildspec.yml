@@ -7,7 +7,7 @@ phases:
       java: openjdk8
   build:
     commands:
-      - java --version
+      - java -version
       - echo "Entered build phase"
       - mvn clean prepare-package war:exploded
   post_build:
