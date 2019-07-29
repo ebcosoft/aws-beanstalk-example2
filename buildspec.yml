@@ -8,7 +8,7 @@ phases:
   build:
     install:
       runtime-versions:
-        java: openjdk8
+        java: openjdk-8
       build:
         commands:
           - java --version
