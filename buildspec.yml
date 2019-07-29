@@ -2,17 +2,12 @@
 
 version: 0.2
 phases:
-  pre_build:
-    commands:
-      - echo "Entered the pre-build phase"
+  install:
+    runtime-versions:
+      java: openjdk8
   build:
-    install:
-      runtime-versions:
-        java: openjdk-8
-      build:
-        commands:
-          - java --version
     commands:
+      - java --version
       - echo "Entered build phase"
       - mvn clean prepare-package war:exploded
   post_build:
